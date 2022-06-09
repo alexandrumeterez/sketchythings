@@ -1,9 +1,7 @@
-from .base import BaseSketch
 from zlib import crc32
 
-class MinHash(BaseSketch):
+class MinHash(object):
 	def __init__(self, k, m) -> None:
-		super().__init__()
 		self.k = k
 		self.m = m
 
